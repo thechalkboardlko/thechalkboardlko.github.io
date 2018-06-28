@@ -1,83 +1,133 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<!-- Start Hero -->
-<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
-    <div class="hero-content">
-        <div class="container-fluid">
-            <div class="hero-content-inner">
-                <h1>{{ site.hero.hero_title }}</h1>
-                <p>{{ site.hero.hero_description }}</p>
-            </div>
-        </div>
-    </div>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Jamnabai Narsee School</title><meta name="description" content="" /><meta name="keywords" content="" /><script  async type="text/javascript"  src="./js/mobile.js"></script><style>.carousel-inner>.item>img {object-fit: cover !important;}</style><link rel="stylesheet" href="./css/style.css"  type="text/css" media="screen, print">
+<link rel="shortcut icon" href="http://192.163.221.171/~jnsac/images/ed50ef54a09a99d944b344a7ae33e191.png"/>
 
-    <div class="container-fluid">
+<script type="text/javascript"  src="./js/jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+    $(function () {     
+        var filterList = {      
+            init: function () {         
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixItUp({
+                selectors: {
+                  target: '.portfolio',
+                  filter: '.filter' 
+              },
+              load: {
+              filter: '.Action, .Food, .Festivals'  
+            }     
+                });                             
+            
+            }
+
+        };
         
-        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
-            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
-            <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
-                <div class="form-field">
-                    <input name="name" type="text" placeholder="Name" required>
-                </div>
-                <div class="form-field">
-                    <input name="phone" type="tel" placeholder="Phone" required>
-                </div>
-                <div class="form-field">
-                    <input name="email" type="email" placeholder="Email" required>
-                </div>
-                <div class="form-field">
-                    <textarea name="comments" placeholder="Message" required></textarea>
-                </div>
-                <input type="submit" class="btn btn-default" value="Send">
-            </form>
-        </div>
+        // Run the show!
+        filterList.init();  
+        
+    }); 
+    </script>
+    
+    <script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 
+</head>
+<body>
+
+<div class="top-header">
+<div class="container">
+    <div class="social">
+        <a target="_blank" href="http://web.jns.ac.in/login.asp?corner=stud" class="email hidden-xs">Parent Portal Login</a>
+        <a style="margin-right:17px;" href="http://mail.google.com/a/jns.ac.in" target="_blank" class="number hidden-xs">Email Login</a>
+    </div>
+    <div class="emph">
+        <a href="http://jns.edusprint.in/jns/Home/OpenContactVerificationLogin" target="_blank" class="email hidden-xs">GIFT City Online Application</a>
+        <a style="margin-left:17px;" href="http://www.jnsgiftcity.org/" target="_blank" class="number hidden-xs">GIFT City Website</a>
     </div>
 </div>
-<!-- End Hero -->
-
-<!-- Start 3 columns -->
-<div class="three-shade-col">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-        <h3>Contact Us</h3>
-        <ul>
-            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
-            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
-            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Opening Hours</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Monday – Friday</td>
-                    <td>{{ site.monday_friday }}</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>{{ site.saturday }}</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>{{ site.sunday }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Location</h3>
-            <p>
-                {{ site.contact.address }}
-            </p>
-    </div>
 </div>
-<!-- End 3 columns -->
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <span class="loader" data-loading-text="loading">
+        </span>
+    </div>
+    <!-- END / PRELOADER -->
+    <div class="container">
+<div class="menuform">
+
+
+</div>
+</div><nav class="navbar navbar-default" role="navigation"><div class="container nav-full"><div class="navbar-header"><button type="button" class="navbar-toggle navBarBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-navicon"></i><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="http://www.jns.ac.in/index.htm"><img src="http://www.jns.ac.in/images/logo.png" class="mainlogo" alt="Jamnabai Narsee School" title="Jamnabai Narsee School" /></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li class="active"><a href="http://www.jns.ac.in/index.htm">Home</a></li><li class="dropdown "><a href="http://www.jns.ac.in/about_us.htm" aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"  class="dropdown-toggle " >About Us <b class="caret"></b></a><ul class="dropdown-menu display-menu"><li class=""><a href="http://www.jns.ac.in/narsee_monjee_educational_trust.htm">Narsee Monjee Educational Trust</a></li><li class=""><a href="http://www.jns.ac.in/patrons’_philosophy.htm">Patrons’ Philosophy</a></li><li class=""><a href="http://www.jns.ac.in/message_from_managing_trustee.htm">Message From Managing Trustee</a></li><li class=""><a href="http://www.jns.ac.in/from_the_principalands_desk.htm">From The Principal's Desk</a></li><li class=""><a href="http://www.jns.ac.in/meet_the_academic_team.htm">Meet The Academic Team</a></li><li class=""><a href="http://www.jns.ac.in/logo_and_school_anthem.htm">Logo & School Anthem</a></li><li class=""><a href="http://www.jns.ac.in/vision,_mission_and_philosophy.htm">Vision, Mission & Philosophy</a></li><li class=""><a href="http://www.jns.ac.in/jns_learner_attributes.htm">JNS Learner Attributes</a></li><li class=""><a href="http://www.jns.ac.in/21st_century_institution.htm">21st Century Institution</a></li><li class=""><a href="http://www.jns.ac.in/jn_pta.htm">JN PTA</a></li><li class=""><a href="http://www.jns.ac.in/jnaa.htm">JNAA</a></li></ul></li><li class="dropdown "><a href="http://www.jns.ac.in/academics.htm" aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"  class="dropdown-toggle " >Academics <b class="caret"></b></a><ul class="dropdown-menu display-menu"><li class=""><a href="http://www.jns.ac.in/pre_school.htm">Pre School</a></li><li class=""><a href="http://www.jns.ac.in/primary_school.htm">Primary School</a></li><li class=""><a href="http://www.jns.ac.in/secondary_school.htm">Secondary School</a></li><li class=""><a href="http://www.jns.ac.in/higher_secondary_school.htm">Higher Secondary School</a></li><li class=""><a href="http://www.jns.ac.in/nios.htm">NIOS</a></li><li class=""><a href="http://www.jns.ac.in/academic_achievers.htm">Academic Achievers</a></li><li class=""><a href="http://www.jns.ac.in/academic_guidance_counselling_center.htm">Academic Guidance Counselling Center</a></li></ul></li><li class="dropdown "><a href="http://www.jns.ac.in/beyond_academics.htm" aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"  class="dropdown-toggle " >Beyond Academics <b class="caret"></b></a><ul class="dropdown-menu display-menu"><li class=""><a href="http://www.jns.ac.in/family_counselling_cell.htm">Family Counselling Cell</a></li><li class=""><a href="http://www.jns.ac.in/holistic_development.htm">Holistic Development</a></li><li class=""><a href="http://www.jns.ac.in/inclusive_education_and_counselling.htm">Inclusive Education & Counselling</a></li></ul></li><li class=""><a href="http://www.jns.ac.in/admissions.htm">Admissions</a></li><li class=""><a href="http://www.jns.ac.in/gallery.htm">Gallery</a></li><li class=""><a href="http://www.jns.ac.in/publications.htm">Publications</a></li><li class=""><a href="http://www.jns.ac.in/contact_us.htm">Contact Us</a></li></ul></div><div class="propertyaddress"><i class="fa fa-map-marker"></i><a href="http://maps.google.com/?q=Jamnabai Narsee School, Narsee Monjee Bhavan, N.S. Road No. 7, JVPD Scheme, Vile Parle (West), Mumbai – 400 049" target="_blank">Jamnabai Narsee School, Narsee Monjee Bhavan, N.S. Road No. 7, JVPD Scheme, Vile Parle (West), Mumbai – 400 049</a></div><div class="propertyphone"><i class="fa fa-phone"></i><a href="tel:+912226187575">912226187575</a></div><div class="propertyemail"><i class="fa fa-envelope"></i><a href="mailto: contactus@jns.ac.in"> contactus@jns.ac.in</a></div><a target="_blank" href="http://web.jns.ac.in/login.asp?corner=stud" class="bknw">BOOK NOW</a></div></nav><div class="main-banner-wrap"><div class="propBannerWrap"><div id="carousel-top" class="carousel slide carousel-fade" data-ride="carousel"><ol class="carousel-indicators"><li data-target="#carousel-top" data-slide-to="0" class="active"></li><li data-target="#carousel-top" data-slide-to="1"></li><li data-target="#carousel-top" data-slide-to="2"></li><li data-target="#carousel-top" data-slide-to="3"></li><li data-target="#carousel-top" data-slide-to="4"></li><li data-target="#carousel-top" data-slide-to="5"></li></ol><div class="carousel-inner"> <div class="item active"><img src="http://www.jns.ac.in/images/big_d2ec5f01dd0d2bb7021ca97bf5a4d30a_thumb.jpg" alt="d2ec5f01dd0d2bb7021ca97bf5a4d30a.jpg"></div><div class="item"><img src="http://www.jns.ac.in/images/big_7aaebae9c78fb9fe3a1874adaedf7ab5_thumb.jpg" alt="7aaebae9c78fb9fe3a1874adaedf7ab5.jpg"></div><div class="item"><img src="http://www.jns.ac.in/images/big_0d2dbdce9da5b1f9d1b712ddf3057e00_thumb.jpg" alt="0d2dbdce9da5b1f9d1b712ddf3057e00.jpg"></div><div class="item"><img src="http://www.jns.ac.in/images/big_d2c2959b0bc78eb7f7768eb8b08542cd_thumb.jpg" alt="d2c2959b0bc78eb7f7768eb8b08542cd.jpg"></div><div class="item"><img src="http://www.jns.ac.in/images/big_8400abac4b10c2d900b60696280246cc_thumb.jpg" alt="8400abac4b10c2d900b60696280246cc.jpg"></div><div class="item"><img src="http://www.jns.ac.in/images/big_8425c5b118748ac15af87fb7733b1633_thumb.jpg" alt="8425c5b118748ac15af87fb7733b1633.jpg"></div></div><a class="left carousel-control" href="#carousel-top" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#carousel-top" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a></div></div></div><!-- <div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body text-center">
+<div class="logo-cls">
+<h3>ONLINE APPLICATION FOR JNS-ISC</h3>
+<a href="http://jnsisc.schoolpay.co.in/" target="_blank"><img src="https://dec1osz9a7g7e.cloudfront.net/JNS_Latest_JNS_Latest_isc.jpg" style="width: 190px;" /> </a></div>
+</div>
+
+<div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+--><!-- <div class="opn_apy">
+<div class="container"><iframe allowfullscreen="" frameborder="0" height="150" src="https://jnis.openapply.com/f/16189" style="border: none" width="150"></iframe></div>
+</div> -->
+<section class="b-diagonal-line-bg-light b-section-info">
+<div class="container">
+<div class="row">
+<h2 class="f-center f-primary-b">Welcome To <span style="color:#116cbb;">Jamnabai Narsee School</span></h2>
+
+<p class="b-desc-section f-desc-section f-center f-primary-l">LET LEARNING BE A JOY AND TEACHING A PLEASURE</p>
+
+<div class="b-hr-stars f-hr-stars">
+<div class="b-hr-stars__group"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+</div>
+
+<div class="col-sm-4">
+<div class="b-shortcode-example"><img src="images/fd440cb40284d45de722717935dae18e.jpg" width="100%" /></div>
+</div>
+
+<div class="col-sm-8">
+<div class="b-shortcode-example">
+<p style="text-align:justify;">Jamnabai Narsee School, situated in the western suburbs of Mumbai, stands tall as a premium educational institution of international standards in India. We provide quality education, right from the Pre &ndash; School to the Indian School Certificate (ISC) examination. Besides offering the Indian Certificate of Secondary Education (ICSE) curriculum, the school facilitates schooling through the National Institute of Open Schooling (NIOS) at the secondary level.</p>
+
+<p style="text-align:justify;">The aim of the school is to develop well rounded individuals, who are eco-conscious and will grow up to be global citizens with humanitarian values. The school motto "Knowledge is Strength Supreme" is succinctly encapsulated in its school emblem through the symbol of the lighted lamp at the centre of the hexagon. This motto is the driving force in the school's pursuit of academic excellence.</p>
+&nbsp;
+
+<center><button class="button-lg">Read More</button></center>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="wvr_cls">
+<div class="row">
+<div class="col-md-7 col-sm-12 col-xs-12">
+<div class="flclr">
+<div class="frm">
+<h2>Our Mission</h2>
+
+<p style="color:#fff;">A desire to achieve excellence in all areas of endeavour. Respect for all forms of authority and for fellow students. Concern for the needs of others, and consideration for the less fortunate. Awareness of the environment and of their responsibility to conserve it. Knowledge and appreciation of India's cultural heritage with a special emphasis on the culture of the community in and around the school. Empathy, with the spirit to embrace global diversities. Readiness to face fearlessly all the problems and challenges which tomorrow's world will bring them.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-5 col-sm-12 col-xs-12 vdclr"><iframe allowfullscreen="" frameborder="0" height="350" src="https://www.youtube.com/embed/PrGm6FHh7gw?rel=0" width="100%"></iframe><!--<iframe allowscriptaccess="always" height="350" quality="medium" src="http://www.youtube.com/v/aoLL5_SNGJA&color1=0xb1b1b1&color2=0xd0d0d0&hl=en_US&feature=player_embedded&fs=1" type="application/x-shockwave-flash" width="100%"></iframe>--></div>
+</div>
+</div>
+
 
 <!-- Start About -->
 <div id="about" class="about">
@@ -150,52 +200,6 @@ layout: default
 </div>
 <!-- End Treatments -->
 
-<!-- Start Our team -->
-<div id="team" class="team"> 
-    <h2 class="section-title">Our Team</h2> 
-    <div id="team-carousel">
-    {% for member in site.data.team %}
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
-                <h4>{{ member.name }}</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:{{ member.email }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:{{ member.phone }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-</div>
-<!-- End Our team -->
-
-<!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Testimonials -->
-
 <!-- Start Gallery -->
 <div id="gallery" class="gallery">
         
@@ -214,6 +218,7 @@ layout: default
 
 </div>
 <!-- End Gallery -->
+
 <footer>
   <div class="container">
     <div class="b-footer-secondary row">
