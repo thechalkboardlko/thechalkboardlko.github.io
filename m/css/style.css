@@ -60,7 +60,7 @@ a.bknw:hover{color:#0c242e!important}
 .navbar-brand{padding:0}
 .navbar-collapse{float:right}
 .navbar-nav{float:left;margin:0}
-.navbar-default .navbar-nav li a{color:#fff;font-family:"Roboto";font-size:15px;font-weight:300;line-height:24px;padding:28px 0;border-top:2px solid rgba(0,0,0,0)}
+.navbar-default .navbar-nav li a{color:#fff;font-family:"Roboto";font-size:25px;font-weight:500;line-height:24px;padding:28px 0;border-top:2px solid rgba(0,0,0,0)}
 .nav li{margin-left:22px}
 .nav li:last-child{margin-right:28px}
 .navbar-default .navbar-nav li a:focus,.navbar-default .navbar-nav li a:hover{color:#349df9;border-top:2px solid #349df9}
