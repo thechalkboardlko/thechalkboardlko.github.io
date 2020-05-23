@@ -6,6 +6,6 @@ i===b?(a.mobile=e.FALLBACK_MOBILE,a.tablet=a.phone=null):i?(a.mobile=a.phone=e.F
 var md = new MobileDetect(window.navigator.userAgent);
 if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	if(md.phone() && !md.tablet()){
-		location.href= './m/index.htm';
+		location.href= './index.htm';
 	}
 }
